@@ -1,0 +1,168 @@
+    v3 = "LCM_FAKE_WIDTH";
+    while ( 1 )
+    {
+      sub_1F1D0(&v51, 0, 11);
+      v4 = (char *)sub_1F528(v0, v3);
+      if ( !v4 )
+        goto LABEL_99;
+      do
+      {
+        v5 = v4;
+        v7 = (unsigned __int8)*v4++;
+        v6 = v7;
+        if ( !v7 )
+          break;
+        v5 = v4;
+      }
+      while ( v6 != 44 );
+      v8 = v2 + 1;
+      *(&v52 + v2 - 12) = *v5;
+      v9 = (unsigned __int8)v5[1];
+      v10 = v9 == 0;
+      if ( v5[1] )
+        v10 = v9 == 44;
+      v11 = v10 ? 0 : 1;
+      v12 = v8 <= 0xA ? v11 & 1 : 0;
+      if ( !v12 )
+        break;
+      v13 = v2 + 2;
+      *(&v52 + v8 - 12) = v9;
+      v14 = (unsigned __int8)v5[2];
+      v15 = v14 == 44;
+      if ( v14 != 44 )
+        v15 = v14 == 0;
+      if ( v15 )
+        v16 = 0;
+      else
+        v16 = 1;
+      if ( v13 <= 0xA )
+        v17 = v16 & 1;
+      else
+        v17 = 0;
+      if ( !v17 )
+        goto LABEL_105;
+      v8 = v2 + 3;
+      *(&v52 + v13 - 12) = v14;
+      v18 = (unsigned __int8)v5[3];
+      v19 = v18 == 44;
+      if ( v18 != 44 )
+        v19 = v18 == 0;
+      if ( v19 )
+        v20 = 0;
+      else
+        v20 = 1;
+      if ( v8 <= 0xA )
+        v21 = v20 & 1;
+      else
+        v21 = 0;
+      if ( !v21 )
+        break;
+      v13 = v2 + 4;
+      *(&v52 + v8 - 12) = v18;
+      v22 = (unsigned __int8)v5[4];
+      v23 = v22 == 44;
+      if ( v22 != 44 )
+        v23 = v22 == 0;
+      v24 = v23 ? 0 : 1;
+      v25 = v13 <= 0xA ? v24 & 1 : 0;
+      if ( !v25 )
+        goto LABEL_105;
+      v8 = v2 + 5;
+      *(&v52 + v13 - 12) = v22;
+      v26 = (unsigned __int8)v5[5];
+      v27 = v26 == 44;
+      if ( v26 != 44 )
+        v27 = v26 == 0;
+      if ( v27 )
+        v28 = 0;
+      else
+        v28 = 1;
+      if ( v8 <= 0xA )
+        v29 = v28 & 1;
+      else
+        v29 = 0;
+      if ( !v29 )
+        break;
+      v13 = v2 + 6;
+      *(&v52 + v8 - 12) = v26;
+      v30 = (unsigned __int8)v5[6];
+      v31 = v30 == 44;
+      if ( v30 != 44 )
+        v31 = v30 == 0;
+      v32 = v31 ? 0 : 1;
+      v33 = v13 <= 0xA ? v32 & 1 : 0;
+      if ( !v33 )
+        goto LABEL_105;
+      v8 = v2 + 7;
+      *(&v52 + v13 - 12) = v30;
+      v34 = (unsigned __int8)v5[7];
+      v35 = v34 == 44;
+      if ( v34 != 44 )
+        v35 = v34 == 0;
+      if ( v35 )
+        v36 = 0;
+      else
+        v36 = 1;
+      if ( v8 <= 0xA )
+        v37 = v36 & 1;
+      else
+        v37 = 0;
+      if ( !v37 )
+        break;
+      v13 = v2 + 8;
+      *(&v52 + v8 - 12) = v34;
+      v38 = (unsigned __int8)v5[8];
+      v39 = v38 == 44;
+      if ( v38 != 44 )
+        v39 = v38 == 0;
+      v40 = v39 ? 0 : 1;
+      v41 = v13 <= 0xA ? v40 & 1 : 0;
+      if ( !v41 )
+        goto LABEL_105;
+      v8 = v2 + 9;
+      *(&v52 + v13 - 12) = v38;
+      v42 = (unsigned __int8)v5[9];
+      v43 = v42 == 44;
+      if ( v42 != 44 )
+        v43 = v42 == 0;
+      if ( v43 )
+        v44 = 0;
+      else
+        v44 = 1;
+      if ( v8 <= 0xA )
+        v45 = v44 & 1;
+      else
+        v45 = 0;
+      if ( !v45 )
+        break;
+      v13 = v2 + 10;
+      *(&v52 + v8 - 12) = v42;
+      v46 = (unsigned __int8)v5[10];
+      v47 = v46 == 44;
+      if ( v46 != 44 )
+        v47 = v46 == 0;
+      v48 = v47 ? 0 : 1;
+      v49 = v13 <= 0xA ? v48 & 1 : 0;
+      if ( v49 )
+      {
+        v2 += 11;
+        *(&v52 + v13 - 12) = v46;
+      }
+      else
+      {
+LABEL_105:
+        v2 = v13;
+      }
+LABEL_98:
+      *((_DWORD *)v3 + 8) = sub_1E80C(&v51);
+LABEL_99:
+      --v1;
+      v3 += 36;
+      if ( !v1 )
+        return 0;
+    }
+    v2 = v8;
+    goto LABEL_98;
+  }
+  return 0;
+}
